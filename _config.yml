@@ -1,0 +1,8 @@
+title: Detectoldbrowser.js
+description: This is a plugin with small footprint that will help in determining if the browser is out dated or not.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
