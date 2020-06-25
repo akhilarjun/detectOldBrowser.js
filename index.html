@@ -11,6 +11,8 @@
     <div class="container hide" id="newBrowser">
         DetectOldBrowsers.js
         <div class="slogan" id='slogan'></div>
+        <div class="helper mt">Wooho! You are using the best and latest</div>
+        <button id="button">Got to Github</button>
     </div>
     <div class="container hide" id="oldBrowser">
         DetectOldBrowsers.js
@@ -38,6 +40,9 @@
             document.getElementById('oldBrowser').classList = 'container hide';
             document.getElementById('slogan').textContent = `You are currently using ${browser.name} v${browser.version}`;
         }
+        document.getElementById('button').addEventListener('click', () => {
+            window.location.href = 'https://github.com/akhilarjun/detectOldBrowser.js';
+        });
     </script>
 </body>
 </html>
