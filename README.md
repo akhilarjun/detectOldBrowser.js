@@ -6,7 +6,7 @@ This is a plugin with small footprint that will help in determining if the brows
 Include the js file into your page
 
 ```html
-<script src='..path-to-js/detectOldBrowser.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/akhilarjun/detectOldBrowser.js@v1.0/js/detectOldBrowser.min.js'></script>
 ```
 
 And now use the boolean method to check if the browser you are using is outdated or not.
