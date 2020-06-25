@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DetectOldBrowsers.js</title>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container hide" id="newBrowser">
+        DetectOldBrowsers.js
+        <div class="slogan" id='slogan'></div>
+    </div>
+    <div class="container hide" id="oldBrowser">
+        DetectOldBrowsers.js
+        <div class="slogan">Ooh! OOh! You are using an old browser</div>
+        <div class="helper mt">Please download a new browser</div>
+    </div>
+    <div class="footer">
+        <div class="foot-note">
+            <div class="helper">Download latest build from</div>
+            <div class="js">
+                <a href="https://cdn.jsdelivr.net/gh/akhilarjun/detectOldBrowser.js@v1.0/js/detectOldBrowser.min.js" target="blank">
+                    https://cdn.jsdelivr.net/gh/akhilarjun/detectOldBrowser.js@v1.0/js/detectOldBrowser.min.js
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/detectOldBrowser.min.js"></script>
+    <script>
+        let browser = get_browser();
+        if (isBrowserOld()) {
+            document.getElementById('newBrowser').classList = 'container hide';
+            document.getElementById('oldBrowser').classList = 'container';
+        } else {
+            document.getElementById('newBrowser').classList = 'container';
+            document.getElementById('oldBrowser').classList = 'container hide';
+            document.getElementById('slogan').textContent = `You are currently using ${browser.name} v${browser.version}`;
+        }
+    </script>
+</body>
+</html>
