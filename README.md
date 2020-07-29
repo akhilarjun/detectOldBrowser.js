@@ -1,3 +1,6 @@
+![File-Size][size-image]
+![Version][version-url]
+
 # detectOldBrowser.js
 This is a plugin with small footprint that will help in determining if the browser is out dated or not. It also has a feature to configure the supported browser version for your application. 
 
@@ -46,3 +49,6 @@ minimum = {
 ```
 
 A big thanks to the [Stackoverflow Answer](http://stackoverflow.com/a/16938481/3534764) that helped in this plugin! :+1:
+
+[version-url]: https://img.shields.io/github/v/release/akhilarjun/detectOldBrowser.js?label=Release&style=flat-square
+[size-image]: http://img.badgesize.io/akhilarjun/detectOldBrowser.js/master/js/detectOldBrowser.min.js.svg?compression=gzip&style=flat-square&label=Minified%20And%20Gzipped%20Size
